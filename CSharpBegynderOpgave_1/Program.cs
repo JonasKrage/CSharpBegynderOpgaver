@@ -2,7 +2,7 @@
 //Udsmyk visitkortet med farver og evt ASCII art.
 
 
-
+Console.WriteLine("Hello world!");
 
 
 
@@ -19,10 +19,10 @@
 // Dette er en kommentar og læses ikke at programmet.
 
 // Ændrer baggrunds- og tekstfarve i konsollen
-//Console.BackgroundColor = ConsoleColor.DarkBlue;
+//Console.BackgroundColor = ConsoleColor.DarkMagenta;
 //Console.Clear(); // Opdaterer konsolbaggrunden
-//Console.ForegroundColor = ConsoleColor.Yellow;
-//
+Console.BackgroundColor = ConsoleColor.Blue;
+Console.Clear();
 //// Laver en overskrift med centrering
 //Console.WriteLine("========================================");
 //Console.WriteLine("             MIT VISITKORT              ");
@@ -33,12 +33,20 @@
 //Console.ForegroundColor = ConsoleColor.Cyan;
 //
 //// Skriver personlig information
-//Console.WriteLine("\nNavn: John Doe");
-//Console.WriteLine("Alder: 10 år");
-//Console.WriteLine("Hobbyer: Spille spil, programmere, fodbold");
-//Console.WriteLine("Yndlingsfarve: Grøn");
-//
-//// Tilføjer lidt mellemrum og prompt for at afslutte programmet
-//Console.ResetColor();
+Console.WriteLine(" Fakta om mig");
+
+Console.WriteLine("==================================================================================");
+Console.WriteLine("| Skrev min første linje af kodning d. 19-02-2025 klokken 18.00                  |");
+Console.WriteLine("==================================================================================");
+Console.WriteLine("| Alder: 12 år                         |");
+Console.WriteLine("========================================");
+Console.WriteLine("| Hobbyer: Spille spil, programmere    |");  
+Console.WriteLine("========================================");
+Console.WriteLine("| Næbdyr er super cool                 |");
+Console.WriteLine("========================================");
+Console.WriteLine("                                                                              -^");
+Console.WriteLine("                                                                             /  >o");
+
+Console.ReadKey();
 //Console.WriteLine("\nTryk på en vilkårlig tast for at afslutte...");
 //Console.ReadKey(); // Venter på brugerinput, før programmet lukker
