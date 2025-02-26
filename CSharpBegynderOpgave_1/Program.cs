@@ -24,17 +24,16 @@ Console.WriteLine("Hello world!");
 Console.BackgroundColor = ConsoleColor.Blue;
 Console.Clear();
 //// Laver en overskrift med centrering
-//Console.WriteLine("========================================");
-//Console.WriteLine("             MIT VISITKORT              ");
-//Console.WriteLine("========================================");
+Console.WriteLine("========================================");
+Console.WriteLine("             MIT VISITKORT              ");
+Console.WriteLine("========================================");
 //
 //// Resetter farverne for det næste indhold
 //Console.ResetColor();
 //Console.ForegroundColor = ConsoleColor.Cyan;
 //
 //// Skriver personlig information
-Console.WriteLine(" Fakta om mig");
-
+Console.WriteLine("               ");
 Console.WriteLine("==================================================================================");
 Console.WriteLine("| Skrev min første linje af kodning d. 19-02-2025 klokken 18.00                  |");
 Console.WriteLine("==================================================================================");
@@ -44,8 +43,8 @@ Console.WriteLine("| Hobbyer: Spille spil, programmere    |");
 Console.WriteLine("========================================");
 Console.WriteLine("| Næbdyr er super cool                 |");
 Console.WriteLine("========================================");
-Console.WriteLine("                                                                              -^");
-Console.WriteLine("                                                                             /  >o");
+Console.WriteLine("  Yndlingsfarve: Cyan                                                                             -^");
+Console.WriteLine("========================================                                                                             /  >o");
 
 Console.ReadKey();
 //Console.WriteLine("\nTryk på en vilkårlig tast for at afslutte...");
