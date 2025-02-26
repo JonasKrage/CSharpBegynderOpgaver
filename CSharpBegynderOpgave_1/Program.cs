@@ -4,16 +4,6 @@
 
 Console.WriteLine("Hello world!");
 
-
-
-
-
-
-
-
-
-
-
 // Eksempler på kommandoer
 
 // Dette er en kommentar og læses ikke at programmet.
