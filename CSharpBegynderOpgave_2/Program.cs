@@ -2,23 +2,56 @@
     - Udvid dit visitkort fra sidst ved at gøre brug af Forskellige datatyper, variabler og user input.
     - Se bunden af koden for eksempler
  */
+Console.BackgroundColor = ConsoleColor.Green;
+Console.Clear();
 
-int xPosition = 5;
-int yPosition = 1;
+Console.ForegroundColor = ConsoleColor.Magenta; 
 
-Console.SetCursorPosition(xPosition, yPosition);
-Console.WriteLine("X");
+int Midte = 40; 
+int Svar = 80;
 
+Console.SetCursorPosition(Midte, 0); 
+Console.WriteLine("Chat med Jonas AI!");
 
-string StrengVariabel = "TestStreng";
-Console.WriteLine(StrengVariabel);
+Console.ForegroundColor = ConsoleColor.DarkCyan;
+Console.SetCursorPosition(Midte, 1);
+Console.WriteLine("Spørg om hvad som helst!");
 
-int IntegerVariabel1 = 5;
-int IntegerVariabel2 = 5;
-Console.WriteLine(IntegerVariabel1 + IntegerVariabel2);
+//Spørg: "Hvor gammel er du?"
+Console.ForegroundColor = ConsoleColor.DarkYellow;
+Console.SetCursorPosition(Midte, 2);
+string Navn = Console.ReadLine();
 
+Console.ForegroundColor = ConsoleColor.Blue;
+Console.SetCursorPosition(Svar, 3);
+Console.WriteLine("12");
 
+//Spørg: "Hvad hedder du?"
+Console.ForegroundColor = ConsoleColor.Magenta;
+Console.SetCursorPosition(Midte, 4);
+string Alder = Console.ReadLine();
+
+Console.ForegroundColor = ConsoleColor.White;
+Console.SetCursorPosition(Svar, 5);
+Console.WriteLine("Jonas");
+
+//Spørg: "Hvad er dit yndlingsdyr?"
+Console.ForegroundColor = ConsoleColor.Red;
+Console.SetCursorPosition(Midte, 6);
 Console.ReadLine();
+
+Console.ForegroundColor = ConsoleColor.Gray;
+Console.SetCursorPosition(Svar, 7);
+Console.WriteLine("Næbdyr");
+
+// Spørg "Hvad er din yndlingsfarve?"
+Console.ForegroundColor = ConsoleColor.Cyan;
+Console.SetCursorPosition(Midte, 8);
+Console.ReadLine();
+
+Console.ForegroundColor = ConsoleColor.Yellow;
+Console.SetCursorPosition(Svar, 9);
+Console.WriteLine("Cyan");
 
 
 
