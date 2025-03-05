@@ -1,38 +1,43 @@
 ﻿//Lav et spil hvor man kan gætte et, af computeren, random genereret tal.
 
 
+int Midte = 55;
 
+Console.SetCursorPosition(Midte, 1);
 
-
+Console.BackgroundColor = ConsoleColor.Black;
 
 Random random = new Random();
-int Resultat = random.Next(0, 101); //Generere et random tal imellem 0 og 100. (0 er med, men 101 er ikke)
-Console.WriteLine(Resultat);
+int Resultat = random.Next(1, 11); //Generere et random tal imellem 0 og 100. (0 er med, men 101 er ikke)
+
+Console.SetCursorPosition(Midte, 3);
+Console.WriteLine("Indtast et tal");
+
+Console.BackgroundColor = ConsoleColor.Black;
+
+Console.SetCursorPosition(Midte, 5);
+int input = Convert.ToInt32(Console.ReadLine());
 
 
-
-
-int a = 1;
-int b = 2;
-//Dette er if statements og bruges til at sammenligne værdier, det skal bruges til spillet.
-if(a > b)
+if(input > Resultat)
 {
-	Console.WriteLine("A er større end B");
+    Console.SetCursorPosition(Midte, 7);
+    Console.BackgroundColor = ConsoleColor.Red;
+    Console.WriteLine("Du gættede forkert");
 }
-else if(a < b)
+else if(input < Resultat)
 {
-	Console.WriteLine("A er mindre end B");
+    Console.SetCursorPosition(Midte, 7);
+    Console.BackgroundColor = ConsoleColor.Red;
+    Console.WriteLine("Hehehehhehhehehehe Du gættede forkert");
 }
 else
 {
-	Console.WriteLine("A og B er ens!");
+    Console.SetCursorPosition(Midte, 7);
+    Console.BackgroundColor = ConsoleColor.Green;
+	Console.WriteLine("korrekt!");
 }
 
-
-//En Console.ReadLine() returnere altid en streng, hvis vi skal lave den om til en int er vi nødt til at pakke det ind i Convert.ToInt()
-Console.WriteLine("Indtast et tal:");
-int input = Convert.ToInt32(Console.ReadLine()); //Det giver altså en fejl hvis vi taster noget ind som IKKE er et tal!
-Console.WriteLine(input); //Udskriv inputtet.
-
+Console.BackgroundColor = ConsoleColor.Black;
 
 Console.ReadKey();
