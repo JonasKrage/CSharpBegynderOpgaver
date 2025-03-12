@@ -8,7 +8,7 @@ Console.SetCursorPosition(Midte, 1);
 Console.BackgroundColor = ConsoleColor.Black;
 
 Random random = new Random();
-int Resultat = random.Next(1, 11); //Generere et random tal imellem 0 og 100. (0 er med, men 101 er ikke)
+int Resultat = random.Next(1, 1001); //Generere et random tal imellem 0 og 100. (0 er med, men 101 er ikke)
 
 Console.SetCursorPosition(Midte, 3);
 Console.WriteLine("Indtast et tal");
